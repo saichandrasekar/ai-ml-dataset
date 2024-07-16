@@ -1,0 +1,8 @@
+import pandas as pd
+import numpy as np
+from sklearn.model_selection import train_test_split
+
+# Load data from S3
+data = pd.read_csv('s3://your-bucket-name/housing_data.csv')
+
+data.head()
